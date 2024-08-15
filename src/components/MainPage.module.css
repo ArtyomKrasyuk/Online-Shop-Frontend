@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.content{
+    max-width: 1224px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.welcomeFrame{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.welcomeFrameText{
+    margin-top: 56px;
+}
+
+.welcomeTitle{
+    font-weight: 600;
+    font-size: 64px;
+    color: #042352;
+    margin-bottom: 50px;
+}
+
+.welcomeSubtitle{
+    font-weight: 500;
+    font-size: 32px;
+    color: #042352;
+    margin-bottom: 118px;
+}
+
+.orangeText{
+    color: #f45e0c;
+}
+
+.welcomeFrameButton{
+   text-decoration: none;
+   color: #fff;
+   font-weight: 400;
+   font-size: 16px;
+   padding: 18.5px 94px;
+   background-color: #f45e0c;
+   border-radius: 8px;
+}
+
+.categories{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.brands{
+    margin-bottom: 48px;
+}
+
+.brandsTitle{
+    font-weight: 500;
+    font-size: 32px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #b4b4b4b4;
+    margin-bottom: 32px;
+}
+
+.brandsImages{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 155px;
+}
+
+.advantages{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.advantage{
+    display: flex;
+    align-items: center;
+}
+
+.advantageText{
+    font-weight: 300;
+    font-size: 20px;
+    color: #0c0c0c;
+    margin-left: 16px;
+}
+
+@media(max-width: 1134px){
+    .computers{
+        width: 582px;
+        height: 354px;
+    }
+
+    .welcomeFrameText{
+        margin-top: 40px;
+    }
+
+    .welcomeTitle{
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    .welcomeSubtitle{
+        font-size: 28px;
+        margin-bottom: 100px;
+    }
+
+    .categories{
+        overflow: scroll;
+    }
+
+    .brandsImages{
+        overflow: scroll;
+    }
+
+    .brandsImages img{
+        margin-right: 30px;
+    }
+
+    .brandsImages img:last-child{
+        margin-right: 0px;
+    }
+}
+
+@media(max-width: 1024px){
+    .welcomeFrame{
+        padding: 0px 45px;
+    }
+
+    .computers{
+        width: 436px;
+        height: 266px;
+    }
+
+    .welcomeFrameText{
+        margin-top: 20px;
+    }
+
+    .welcomeTitle{
+        font-size: 40px;
+    }
+
+    .welcomeSubtitle{
+        font-size: 24px;
+        margin-bottom: 80px;
+    }
+
+    .welcomeFrameButton{
+        font-size: 16px;
+        padding: 15.5px 74px;
+     }
+
+     .brandsTitle{
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 850px){
+    .computers{
+        width: 364px;
+        height: 221px;
+    }
+
+    .welcomeFrameText{
+        margin-top: 20px;
+    }
+
+    .welcomeTitle{
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .welcomeSubtitle{
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+
+    .welcomeFrameButton{
+        font-size: 12px;
+        padding: 12.5px 44px;
+    }
+
+    .brandsTitle{
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .advantages{
+        display: block;
+        height: 100%;
+    }
+
+    .advantage{
+        margin-bottom: 20px;
+        margin-left: 40px;
+    }
+}
+
+@media(max-width: 734px){
+    .computers{
+        width: 291px;
+        height: 177pxx;
+    }
+}
+
+@media(max-width: 661px){
+    .welcomeFrame{
+        padding: 0px 20px;
+    }
+
+    .computers{
+        width: 209px;
+        height: 157px;
+    }
+
+    .welcomeFrameText{
+        margin-top: 20px;
+    }
+
+    .welcomeTitle{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .welcomeSubtitle{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .welcomeFrameButton{
+        font-size: 10px;
+        padding: 10px 24px;
+    }
+
+    .brandsTitle{
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .advantageText{
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 483px){
+    .welcomeFrame{
+        padding: 0px 10px;
+    }
+
+    .welcomeSubtitle{
+        font-size: 12px;
+    }
+
+    .advantageText{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 413px){
+    .welcomeFrame{
+        padding: 0px 40px;
+    }
+
+    .computers{
+        display: none;
+    }
+}

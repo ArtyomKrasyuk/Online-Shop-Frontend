@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.content{
+    max-width: 1440px;
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to bottom, rgba(12,104,244,0.3) 0%, rgba(12,104,244,0.7) 54%, rgba(12,104,244,0.3) 100%);
+    border-image-slice: 1;
+    z-index: 10;
+}
+
+.logo{
+    margin-left: 108px;
+}
+
+.menu{
+    display: none;
+}
+
+.company{
+    display: none;
+}
+
+.menu:hover{
+    cursor: pointer;
+}
+
+.nav{
+    max-width: 464px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+.link{
+    display: block;
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+}
+
+.buttons{
+    margin-right: 110px;
+    max-width: 136px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuCard{
+    display: none;
+    width: 254px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    background-color: #fff;
+    height: 100%;
+}
+
+.menuCardTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    height: 90px;
+}
+
+.closeBtn:hover{
+    cursor: pointer;
+}
+
+@media(max-width: 1110px){
+    .logo{
+        margin-left: 20px;
+    }
+
+    .buttons{
+        margin-right: 20px;
+    }
+}
+
+@media(max-width: 880px){
+    .logo{
+        display: none;
+    }
+
+    .buttons{
+        margin-right: 20px;
+    }
+
+    .nav{
+        display: none;
+        position: fixed;
+        z-index: 21;
+        left: 20px;
+        top: 110px;
+    }
+
+    .menu{
+        display: block;
+        margin-left: 20px;
+    }
+
+    .company{
+        display: block;
+        font-weight: 500;
+        font-size: 24px;
+        color: #0951BE;
+    }
+    
+    .link{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width: 425px){
+    .buttons{
+        max-width: 110px;
+    }
+}
+
+
+.menuCard.active{
+    display: block;
+}
+
+.nav.active{
+    display: block;
+}
