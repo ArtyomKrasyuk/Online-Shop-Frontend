@@ -17,7 +17,7 @@
     flex: 1 1 auto;
     max-width: 1224px;
     width: 100%;
-    margin: 60px auto 0px auto;
+    margin: 160px auto 0px auto;
 }
 
 .title{
@@ -29,6 +29,7 @@
 .productsContainer{
     display: flex;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .filters{
@@ -39,5 +40,32 @@
 }
 
 .products{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -24px 9px -24px;
+}
 
+.pages{
+    display: flex;
+    justify-content: center;
+}
+
+.page{
+    font-weight: 300;
+    font-size: 18px;
+    padding: 11.5px 18px;
+    margin-right: 8px;
+}
+
+.page:last-child{
+    margin-right: 0;
+}
+
+.page:hover{
+    cursor: pointer;
+}
+
+.page.active{
+    color: #0C68F4;
+    border-bottom: 1px solid #0C68F4;
 }

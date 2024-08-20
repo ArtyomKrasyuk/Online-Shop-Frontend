@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.content{
+    width: 512px;
+    max-height: 700px;
+    padding: 24px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 23;
+    top: 100px;
+    right: 103px;
+}
+
+.number{
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.cardContainer{
+    max-width: 464px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    max-height: 560px;
+    overflow-y: scroll;
+}
+
+.cardContainer::-webkit-scrollbar{
+    width: 0;
+}
+
+
+.flexContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.total{
+    text-align: center;
+}
+
+.title{
+    font-weight: 300;
+    font-size: 14px;
+    color: #2D2D2D;
+    margin-bottom: 3px;
+}
+
+.price{
+    font-weight: 500;
+    font-size: 16px;
+    color: #2D2D2D;
+}
+
+.btn{
+    padding: 12px 100px;
+    border-radius: 8px;
+    background-color: #0C68F4;
+    text-decoration: none;
+    display: block;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btnContainer{
+    display: flex;
+    align-items: center;
+}
+
+.btnText{
+    margin-right: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+@media(max-width: 880px){
+    .content{
+        width: 360px;
+    }
+
+    .number{
+        font-size: 16px;
+    }
+
+    .cardContainer{
+        max-width: 328px;
+    }
+
+    .price{
+        font-size: 14px;
+    }
+
+    .title{
+        font-size: 12px;
+    }
+
+    .btnText{
+        font-size: 14px;
+    }
+
+    .btn{
+        padding: 8px 46px;
+    }
+}
+
+@media(max-width: 620px){
+    .content{
+        margin: 0px;
+        width: 100%;
+        height: 100vh;
+        top: 100px;
+        left: 0;
+        right: 0;
+    }
+
+    .cardContainer{
+        margin: 0 auto;
+    }
+
+    .flexContainer{
+        width: 312px;
+        margin: 0 auto;
+    }
+
+    .number{
+        width: 312px;
+        margin: 0 auto;
+    }
+}
